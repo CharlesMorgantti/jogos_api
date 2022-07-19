@@ -1,0 +1,4 @@
+[build]
+base= "jogos-api"
+command= "CI= yarn build"
+publish = "build"

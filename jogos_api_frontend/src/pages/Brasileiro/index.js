@@ -17,7 +17,7 @@ function Brasileiro(){
       }, []);
 
       async    function dados(){
-            await       axios.get(`https://jogos-api.herokuapp.com//brasileiro`)
+            await       axios.get(`http://www.localhost:8080/brasileiro`)
             .then((response) => {
               const data = response.data ;
               setLista(data);
@@ -29,6 +29,7 @@ function Brasileiro(){
           evt.preventDefault();
       alert(url)
       axios.get(`https://jogos-api.herokuapp.com//${url}`)
+      //axios.get(`https://jogos-api.herokuapp.com//${url}`)
      // axios.get(`http://www.localhost:8080/sulamericana`)
       .then((response) => {
         const data = response.data ;
