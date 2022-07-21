@@ -17,7 +17,9 @@ function Brasileiro(){
       }, []);
 
       async    function dados(){
-            await       axios.get(`http://www.localhost:8080/brasileiro`)
+            await       
+            //axios.get(`http://www.localhost:8080/brasileiro`)
+            axios.get(`https://jogos-api.herokuapp.com/brasileiro`)
             .then((response) => {
               const data = response.data ;
               setLista(data);
